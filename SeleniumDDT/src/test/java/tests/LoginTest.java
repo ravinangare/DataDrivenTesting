@@ -22,7 +22,7 @@ public class LoginTest {
 
     @DataProvider(name = "loginData")
     public Object[][] loginData() {
-        return ExcelUtils.getExcelData("C:\\Users\\Sharayu\\DataDrivenTesting\\SeleniumDDT\\src\\test\\resources\\testData.xlsx", "LoginData");
+        return ExcelUtils.getExcelData("..\\SeleniumDDT\\src\\test\\resources\\testData.xlsx", "LoginData");
     }
 
     @Test(dataProvider = "loginData")
