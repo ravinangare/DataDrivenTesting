@@ -1,56 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-07T19:19:17 IST" name="Default suite" finished-at="2025-07-07T19:19:19 IST" duration-ms="1721">
+  <suite started-at="2025-07-08T12:05:41 IST" name="Default suite" finished-at="2025-07-08T12:05:54 IST" duration-ms="12996">
     <groups>
     </groups>
-    <test started-at="2025-07-07T19:19:17 IST" name="Default test" finished-at="2025-07-07T19:19:19 IST" duration-ms="1721">
+    <test started-at="2025-07-08T12:05:41 IST" name="Default test" finished-at="2025-07-08T12:05:54 IST" duration-ms="12996">
       <class name="tests.LoginTest">
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@13e344d]" started-at="2025-07-07T19:19:17 IST" name="testLogin" data-provider="loginData" finished-at="2025-07-07T19:19:19 IST" duration-ms="1657" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void tests.LoginTest.testLogin(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: testLogin([java.lang.String arg0, java.lang.String arg1])
-Arguments: [(java.lang.String) ravi,(java.lang.String) nangare,(java.lang.String) 411046.0,(java.lang.String) 6]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void tests.LoginTest.testLogin(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: testLogin([java.lang.String arg0, java.lang.String arg1])
-Arguments: [(java.lang.String) ravi,(java.lang.String) nangare,(java.lang.String) 411046.0,(java.lang.String) 6]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:918)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@3349e9bb]" started-at="2025-07-08T12:05:42 IST" name="setup" finished-at="2025-07-08T12:05:51 IST" duration-ms="9126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3349e9bb]" started-at="2025-07-08T12:05:51 IST" name="testLogin" data-provider="loginData" finished-at="2025-07-08T12:05:51 IST" duration-ms="235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass123$]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3349e9bb]" started-at="2025-07-08T12:05:51 IST" name="tearDown" finished-at="2025-07-08T12:05:51 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@3349e9bb]" started-at="2025-07-08T12:05:51 IST" name="setup" finished-at="2025-07-08T12:05:53 IST" duration-ms="2125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3349e9bb]" started-at="2025-07-08T12:05:53 IST" name="testLogin" data-provider="loginData" finished-at="2025-07-08T12:05:54 IST" duration-ms="211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3349e9bb]" started-at="2025-07-08T12:05:54 IST" name="tearDown" finished-at="2025-07-08T12:05:54 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

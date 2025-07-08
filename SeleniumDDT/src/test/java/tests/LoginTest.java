@@ -22,7 +22,7 @@ public class LoginTest {
 
     @DataProvider(name = "loginData")
     public Object[][] loginData() {
-        return ExcelUtils.getExcelData("/Users/ravinangare/eclipse-workspace/Utkarshshaa_ws_24/SeleniumDDT/src/test/resources/testData.xlsx", "CustomerData");
+        return ExcelUtils.getExcelData("C:\\Users\\Sharayu\\DataDrivenTesting\\SeleniumDDT\\src\\test\\resources\\testData.xlsx", "LoginData");
     }
 
     @Test(dataProvider = "loginData")
@@ -30,8 +30,6 @@ public class LoginTest {
         driver.findElement(By.xpath("//input[@id='email']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@id='pass']")).sendKeys(password);
         driver.findElement(By.name("login")).click();
-
-        // Add validation logic here
     }
 
     @AfterMethod
